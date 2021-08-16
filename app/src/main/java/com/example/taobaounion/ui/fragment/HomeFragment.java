@@ -51,8 +51,8 @@ public class HomeFragment extends BaseFragment implements IHomeCallBack {
     @Override
     protected void initPresenter() {
         homePresenter = new HomePresenterImpl();
-        //注册callback'
-        homePresenter.registerCallback(this);
+        //注册callback
+        homePresenter.registerViewCallBack(this);
     }
 
     @Override
@@ -94,7 +94,7 @@ public class HomeFragment extends BaseFragment implements IHomeCallBack {
     protected void release() {
       //取消回调注册
         if (homePresenter != null) {
-            homePresenter.UnregisterCallback(this);
+            homePresenter.unregisterViewCallBack(this);
         }
     }
 
