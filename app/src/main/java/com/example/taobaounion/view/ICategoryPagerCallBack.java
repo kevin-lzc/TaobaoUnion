@@ -1,5 +1,6 @@
 package com.example.taobaounion.view;
 
+import com.example.taobaounion.base.IBaseCallBack;
 import com.example.taobaounion.model.domain.HomePagerContent;
 
 import java.util.List;
@@ -8,7 +9,7 @@ import java.util.List;
 Date:
 Time:
 Author:lzc
-*/   public interface ICategoryPagerCallBack {
+*/   public interface ICategoryPagerCallBack extends IBaseCallBack {
 /*
 数据加载回来的回调
  */
@@ -16,24 +17,17 @@ Author:lzc
     /*
     加载中
      */
-    void onLoading(int categoryId);
-    /*
-    网络错误
-     */
-    void onError(int cateGoryId);
-    /*
-    数据为空
-     */
-    void onEmpty(int cateGoryId);
+    int getCategoryId();
+
 
     /*
     下拉刷新加载更多网络错误
      */
-    void onLoadMoreError(int categoryId);
+    void onLoadMoreError();
     /*
     下拉刷新加载更多为空
      */
-    void onLoadMoreEmpty(int categoryId);
+    void onLoadMoreEmpty();
     /*
     下拉刷新加载更多成功
      */

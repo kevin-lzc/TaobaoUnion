@@ -293,6 +293,16 @@ Author:lzc
             }
         }
     }
+
+    @Override
+    public String toString() {
+        return "HomePagerContent{" +
+                "success=" + success +
+                ", code=" + code +
+                ", message='" + message + '\'' +
+                ", data=" + data +
+                '}';
+    }
 }
 
 

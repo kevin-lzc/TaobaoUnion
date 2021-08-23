@@ -10,4 +10,5 @@
     <color name="colorPrey">#7B7B7B</color>
     <color name="colorTabSelected">#ffffff</color>
     <color name="colorTabNormal">#ff999999</color>
+    <color name="color_tmal">#D0021B</color>
 </resources>

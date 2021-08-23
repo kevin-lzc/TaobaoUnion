@@ -5,7 +5,7 @@ Date:
 Time:
 Author:lzc
 */ public interface IBaseCallBack {
-    void onNetWorkError();
+    void onError();
     void onLoading();
     void onEmpty();
 }

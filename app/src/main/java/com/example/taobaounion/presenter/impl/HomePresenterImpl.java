@@ -42,7 +42,7 @@ public class HomePresenterImpl implements IHomePresenter{
                     }
                     else {
                         if (mCallback != null) {
-                            mCallback.onNetWorkError();
+                            mCallback.onError();
                         }
                     }
                     LogUtils.d(HomePresenterImpl.this,"categories-->"+categories);
@@ -54,7 +54,7 @@ public class HomePresenterImpl implements IHomePresenter{
             @Override
             public void onFailure(Call<Categories> call, Throwable t) {
                 if (mCallback != null) {
-                    mCallback.onNetWorkError();
+                    mCallback.onError();
                 }
             }
         });
